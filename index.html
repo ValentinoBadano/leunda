@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Leunda - Ingeniero Industrial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('/api/placeholder/1200/400') center/cover no-repeat;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .project {
+            border-left: 5px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/api/placeholder/150/150" alt="Agustín Leunda" class="profile-img">
+        <h1>Agustín Leunda</h1>
+        <p>Ingeniero Industrial</p>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Soy un ingeniero industrial apasionado por la optimización de procesos y la gestión de proyectos. Con experiencia en la industria manufacturera y logística, busco constantemente formas innovadoras de mejorar la eficiencia y la productividad.</p>
+            <img src="/api/placeholder/800/400" alt="Imagen representativa de ingeniería industrial" style="width:100%; height:auto; border-radius:8px; margin-top:20px;">
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <div class="project">
+                <h3>Ingeniero de Procesos - TechManufacturing Inc.</h3>
+                <p>2018 - Presente</p>
+                <ul>
+                    <li>Lideré proyectos de mejora continua que resultaron en un aumento del 15% en la eficiencia de producción.</li>
+                    <li>Implementé técnicas de Lean Manufacturing y Six Sigma en la línea de producción principal.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Analista de Logística - LogisTech Solutions</h3>
+                <p>2015 - 2018</p>
+                <ul>
+                    <li>Optimicé rutas de distribución, reduciendo costos de transporte en un 10%.</li>
+                    <li>Desarrollé un sistema de seguimiento de inventario en tiempo real.</li>
+                </ul>
+            </div>
+            <img src="/api/placeholder/800/400" alt="Imagen de una fábrica moderna" style="width:100%; height:auto; border-radius:8px; margin-top:20px;">
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p><strong>Ingeniería Industrial</strong> - Universidad Tecnológica Nacional (2011 - 2015)</p>
+            <p><strong>Maestría en Gestión de Operaciones</strong> - Universidad de Buenos Aires (2016 - 2018)</p>
+            <img src="/api/placeholder/800/400" alt="Imagen de un campus universitario" style="width:100%; height:auto; border-radius:8px; margin-top:20px;">
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <span class="skill">Gestión de proyectos</span>
+                <span class="skill">Lean Manufacturing</span>
+                <span class="skill">Six Sigma (Green Belt)</span>
+                <span class="skill">Análisis de datos</span>
+                <span class="skill">Optimización de procesos</span>
+                <span class="skill">AutoCAD</span>
+                <span class="skill">SAP ERP</span>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Email: agustin.leunda@email.com</p>
+            <p>LinkedIn: linkedin.com/in/agustinleunda</p>
+            <p>Teléfono: +54 9 11 1234-5678</p>
+        </section>
+    </div>
+</body>
+</html>
